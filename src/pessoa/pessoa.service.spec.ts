@@ -18,11 +18,7 @@ describe('PessoaService', () => {
   });
 
   it('should create a pessoa', async () => {
-    const pessoa = await service.create({
-      nome: 'John Doe',
-      cpf: '12345678901',
-      email: 'john.doe@example.com',
-    });
+    const pessoa = await service.create({ nome: 'John Doe', cpf: '12345678901', email: 'john.doe@example.com' });
     expect(pessoa).toBeDefined();
     expect(pessoa.nome).toBe('John Doe');
   });
